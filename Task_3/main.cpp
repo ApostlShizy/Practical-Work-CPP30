@@ -28,7 +28,7 @@ int main() {
             std::cout<<r.text<<std::endl;
         }
         else {          
-            std::string url_str;
+            std::string url_str = "httpbin.org/get?";
             for(;iter != args.end();++iter){
                 url_str += iter->first + "=" + iter->second + "&";
             }
